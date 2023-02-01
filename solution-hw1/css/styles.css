@@ -7,6 +7,7 @@ body {
 header img{
 	width: 300px;
 	height: auto;
+	border:none;
 
 }
 
@@ -14,34 +15,31 @@ header img{
 
 .nav {
 	text-align: center;
-	margin-bottom:20px;
+	margin-bottom:50px;
 }
 
 .nav a{
 	text-decoration: none;
 	color: black;
-	font-weight: 700;
 }
 
 .nav a.selected{
 	background-color:yellow;
-}
-
-.content img {
-	border: solid;
-}
-
-/*gallery styling*/
-.content{
-	margin-left: auto;
-	margin-right: auto;
-	padding:20px;
-
+	font-weight: 700;
 }
 
 h1{
 	text-align: center;
+	font-weight: 400;
+	margin-bottom: 30px;
+	font-size: 25px;
 }
+
+img{
+	border:solid;
+}
+
+/*gallery styling*/
 
 .item{
 	padding: 30px;
@@ -63,4 +61,37 @@ h1{
 
 .item:hover{
 	background:yellow;
+}
+
+.item:hover a{
+	font-weight: 700;
+}
+
+/*details page styling*/
+
+.item-details{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.item-details img{
+	width: 400px;
+	height: auto;
+}
+
+.item-details .custom{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.item-details form{
+	padding-bottom: 10px;
+}
+
+select{
+	width: 200px;
 }
