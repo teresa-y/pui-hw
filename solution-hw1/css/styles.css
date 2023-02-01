@@ -1,6 +1,8 @@
 body {
 	font-family: Sans-Serif;
-	padding: 0px;  
+	padding: 0px;
+	margin-bottom: 50px;  
+
 }
 
 /*logo styling*/
@@ -94,4 +96,24 @@ img{
 
 select{
 	width: 200px;
+}
+
+.price-info{
+	margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}
+
+.price-info p{
+	display: inline;
+	width: 200px;
+	font-weight: 700;
+	padding: 10px;
+}
+
+.price-info .button{
+	border: solid;
+	background-color: yellow;
+	padding: 5px 20px 5px 20px; 
 }
