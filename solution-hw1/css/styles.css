@@ -13,11 +13,18 @@ header img{
 
 }
 
+/*bar styling*/
+hr{
+	height: 3px;
+	background: black;
+}
+
 /*navbar styling*/
 
 .nav {
 	text-align: center;
-	margin-bottom:50px;
+	margin-bottom:100px;
+	font-size: 20px;
 }
 
 .nav a{
@@ -44,10 +51,11 @@ img{
 /*gallery styling*/
 
 .item{
-	padding: 30px;
+	padding: 20px;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 
 }
 
@@ -112,8 +120,57 @@ select{
 	padding: 10px;
 }
 
-.price-info .button{
+.button{
 	border: solid;
 	background-color: yellow;
 	padding: 5px 20px 5px 20px; 
+	width: 100px;
+	margin-left:auto;
+	margin-right: auto;
+	font-weight: 700;
+}
+
+/*cart styling*/
+
+.cart-info{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 20px;
+}
+
+.cart-img{
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cart-info img{
+	width: 100px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.remove-item{
+	font-size: 12px;
+	text-align: center;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.cart-item-info{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.cart-item-price{
+	margin-top: 20px;
+}
+
+.total-price{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
