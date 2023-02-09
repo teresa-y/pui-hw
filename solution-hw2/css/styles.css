@@ -230,6 +230,8 @@ select{
 .cart-info .button{
 	margin-right: 20px;
 	margin-left: auto;
+	width: 100px;
+
 }
 
 .total-price{
