@@ -44,7 +44,6 @@ let allSize = [
 
 function displayPrice() {
     let priceElement = document.querySelector('#item-price');
-    console.log(priceElement);
     priceElement.innerHTML = '$' + ((basePrice + glazingPrice) * sizePrice).toFixed(2)
   }
 
