@@ -31,7 +31,7 @@
         <div class = "custom">
           <div class="detail-desc">Customize our delicious, hand-made cinnamon roll to your liking!</div>
           <div class="dropdown">
-            <form>  
+            <form id="form">  
               <label>Glazing:</label><br>  
               <select id = "glazingOption" onchange = "glazingChange(this)">  
               <option value="0">Keep Original   
@@ -43,9 +43,7 @@
               <option value="3">Double Chocolate   
               </option>  
               </select>  
-            </form>
-            
-            <form>  
+
               <label>Pack size:</label><br>  
               <select id = "sizeOption" onchange = "sizeChange(this)">  
               <option value="0">1   
@@ -56,15 +54,16 @@
               </option>  
               <option value="3">12   
               </option>  
-              </select>  
+              </select> 
+
+              <div class="price-info">
+                <div id="item-price"></div>
+                <div><button class = "button" type = "submit">Add to Cart</button></div>
+              </div>
+    
             </form>  
           </div>
           
-          <div class="price-info">
-            <div id="item-price">$2.49</div>
-            <div class = "button">Add to Cart</div>
-          </div>
-
         </div>
       </div>
     </div>
