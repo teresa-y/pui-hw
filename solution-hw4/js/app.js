@@ -95,12 +95,8 @@ function addToCart() {
     console.log(cart);
 }
 
-selectGlazing.addEventListener('change', onSelectValueChange)
-selectSize.addEventListener('change', onSelectValueChange)
-
 document.querySelector('#form').addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('hi');
     addToCart();
   })
 
