@@ -40,7 +40,7 @@ let selectSize = document.querySelector('#sizeOption');
 function addToCart() {
     let rollGlazing = allGlaze[selectGlazing.selectedIndex];
     let packSize = allSize[selectSize.selectedIndex];
-    cart.push(new Roll(rollType, rollGlazing, packSize, basePrice));
+    cart.push(new Roll(rollType, rollGlazing.glazing, packSize.size));
     console.log(cart);
 }
 

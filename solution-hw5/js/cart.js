@@ -1,10 +1,10 @@
 //cart display stuff
-cart = [    
-    new Roll('Original', 'Sugar milk', '1'),
-    new Roll('Walnut', 'Vanilla milk', '12'),
-    new Roll('Raisin', 'Sugar milk', '3'),
-    new Roll('Apple', 'Keep original', '3')
-]
+cart = [];
+
+cart.push(new Roll('Original', 'Sugar milk', '1'));
+cart.push(new Roll('Walnut', 'Vanilla milk', '12'));
+cart.push(new Roll('Raisin', 'Sugar milk', '3'));
+cart.push(new Roll('Apple', 'Keep original', '3'));
 
 let totalPrice = 0;
 
@@ -33,7 +33,6 @@ function updateElement(item){
     const removeButton = item.element.querySelector('.remove-item');
 
     itemImageElement.src = `products/${rolls[item.type].imageFile}`;
-    console.log(itemImageElement.src)
     itemNameElement.innerText = `${item.type} Cinnamon Roll`;
     itemGlazeElement.innerText = `Glazing: ${item.glazing}`;
     itemSizeElement.innerText = `Pack size: ${item.size}`;
