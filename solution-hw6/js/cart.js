@@ -1,11 +1,4 @@
 //cart display stuff
-cart = [];
-
-cart.push(new Roll('Original', 'Sugar milk', '1'));
-cart.push(new Roll('Walnut', 'Vanilla milk', '12'));
-cart.push(new Roll('Raisin', 'Sugar milk', '3'));
-cart.push(new Roll('Apple', 'Keep original', '3'));
-
 let totalPrice = 0;
 
 //displaying cart items
@@ -63,25 +56,4 @@ function updateTotalPrice() {
     cart = cart.filter(element => element !== item);
     saveToLocalStorage();
 }
-
-
-//retrieve from storage
-function retrieveFromLocalStorage() {
-    const cartArrayString = localStorage.getItem('storedItems');
-    const cartArray = JSON.parse(cartArrayString);
-    console.log(cartArray);
-
-  }
-  
-for (const item of cartArray) {
-    let selectGlazing = document.querySelector('#glazingOption');
-    let selectSize = document.querySelector('#sizeOption');
-
-    addToCart();
-
-  }
-
-if (localStorage.getItem('storeItems') != null) {
-    retrieveFromLocalStorage();
-  }
   

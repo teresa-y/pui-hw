@@ -57,3 +57,33 @@ class Roll {
         this.totalPrice = ((this.basePrice + glazeObj.adaption) * sizeObj.adaption).toFixed(2)
     }
 }
+
+let cart = [];
+function saveToLocalStorage() {
+    const cartString = JSON.stringify(cart);
+
+    localStorage.setItem('storedItems', cartString);
+  
+    console.log(cartString)
+  }
+
+function retrieveFromLocalStorage() {
+    const cartArrayString = localStorage.getItem('storedItems');
+    const cartArray = JSON.parse(cartArrayString);
+    console.log(cartArray);
+
+    for (const item of cartArray) {
+        const roll = new Roll(item.type, item.glazing, item.size)   
+        cart.push(roll);
+    
+      }    
+
+  }
+  
+
+if (localStorage.getItem('storeItems') != null) {
+    retrieveFromLocalStorage();
+  }
+
+
+

@@ -17,7 +17,6 @@ function sizeChange(element){
 
 //url params
 
-let cart = [];
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -51,16 +50,5 @@ document.querySelector('#form').addEventListener('submit', (e) => {
   })
 
 
-//storage
-function saveToLocalStorage() {
-    console.log(cart);
-
-    const cartString = JSON.stringify(cart);
-
-    localStorage.setItem('storedItems', cartString);
-  
-    console.log(cartString)
-  }
 
 
-  
