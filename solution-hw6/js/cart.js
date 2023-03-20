@@ -46,7 +46,7 @@ function updateElement(item){
 }
 
 function updateTotalPrice() {
-    document.querySelector('.total-price').innerText = '$' + totalPrice;
+    document.querySelector('.total-price').innerText = '$' + totalPrice.toFixed(2);
 }
 
   //item deletion function

@@ -41,12 +41,12 @@ function addToCart() {
     let packSize = allSize[selectSize.selectedIndex];
     cart.push(new Roll(rollType, rollGlazing.glazing, packSize.size));
     console.log(cart);
+    saveToLocalStorage();
 }
 
 document.querySelector('#form').addEventListener('submit', (e) => {
     e.preventDefault();
     addToCart();
-    saveToLocalStorage();
   })
 
 

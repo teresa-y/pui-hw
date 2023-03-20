@@ -59,6 +59,11 @@ class Roll {
 }
 
 let cart = [];
+
+if (localStorage.getItem('storeItems') != null) {
+    retrieveFromLocalStorage();
+  }
+
 function saveToLocalStorage() {
     const cartString = JSON.stringify(cart);
 
@@ -73,17 +78,11 @@ function retrieveFromLocalStorage() {
     console.log(cartArray);
 
     for (const item of cartArray) {
-        const roll = new Roll(item.type, item.glazing, item.size)   
-        cart.push(roll);
+        cart.push(item)
     
       }    
 
   }
   
-
-if (localStorage.getItem('storeItems') != null) {
-    retrieveFromLocalStorage();
-  }
-
 
 
